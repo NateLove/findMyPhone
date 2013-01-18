@@ -38,7 +38,6 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
 										+ message
 										+ " So I will now increase volume to full blast and play alarm");
 						maxVolume(context);
-						playAlarm(context);
 						this.abortBroadcast();
 						displayAlert(context);
 						
@@ -82,13 +81,6 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
 				AudioManager.FLAG_SHOW_UI);
 	}
 	
-	void playAlarm(Context context)
-	{
-		Log.i(TAG, "Playing ringtone to the MAX!!11!");
-
-		Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
-		Ringtone r = RingtoneManager.getRingtone(context, notification);
-		r.play();
-	}
+	
 
 }
