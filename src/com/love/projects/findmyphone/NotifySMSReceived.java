@@ -10,7 +10,6 @@ import android.os.Bundle;
 
 public class NotifySMSReceived extends Activity 
 {
-    private static final String LOG_TAG = "SMSReceiver";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

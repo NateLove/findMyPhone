@@ -64,10 +64,7 @@ public class MainActivity extends Activity {
 						Log.i(TAG, "The button AlarmAndVolume is now "
 								+ isChecked);
 						setSwitchState(alarmAndVolume, alarmAndVolumeSwitch, isChecked, Globals.getGlobals().volumeAndAlarmBoolean);
-					
 					}
-					
-					
 				});
 
 		volumeOnlySwitch = (Switch) findViewById(R.id.Switch2);
@@ -83,12 +80,10 @@ public class MainActivity extends Activity {
 						Log.i(TAG, "The button VolumeOnly is now "
 								+ isChecked);
 						setSwitchState(volumeOnly, volumeOnlySwitch, isChecked, Globals.getGlobals().volumeOnlyBoolean);
-
 					}
 				});
 
 		Button b = (Button) findViewById(R.id.update);
-
 		b.setOnClickListener(new OnClickListener() {
 
 			@Override
